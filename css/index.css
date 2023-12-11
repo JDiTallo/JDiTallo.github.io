@@ -62,7 +62,7 @@ article {
     section#german {
         grid-area: 1/2/1/2;
 
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/kaffelatsch2.png);
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/kaffelatsch2.jpg);
         background-size: 1000px;
         background-position: 45% 15%;
         background-repeat: no-repeat;
