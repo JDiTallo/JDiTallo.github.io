@@ -96,7 +96,7 @@ article > section > div > h2 > a:active {
 }
 
 /*Mobile Screen*/
-@media only screen and (max-aspect-ratio: 7/6) {
+@media only screen and (max-aspect-ratio: 15/16) {
 
     /* Sets the main photo on top of the content that would be aside of the photo normally */  
     body {
@@ -115,7 +115,7 @@ article > section > div > h2 > a:active {
 
         div#mainPhoto > img {
             margin: auto;
-            width: 90%;
+            width: 80%;
         
         }
 
