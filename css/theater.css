@@ -32,7 +32,7 @@ footer.contact {
 /*Mobile Screen: Theater Article on top of Photos Article. The Photos are also on top of each other*/
 @media only screen and (max-aspect-ratio: 15.99/16){
     body {
-        grid-template-rows: 100px 0.25fr 1fr 75px;
+        grid-template-rows: 100px 0.25fr 0.3fr 75px;
         grid-template-columns: 0.5fr 0.5fr;
     }
 
