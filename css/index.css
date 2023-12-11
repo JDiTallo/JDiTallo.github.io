@@ -101,6 +101,7 @@ article > section > div > h2 > a:active {
     /* Sets the main photo on top of the content that would be aside of the photo normally */  
     body {
         grid-template-rows: 100px 0.5fr 0.15fr 1fr 75px;
+        grid-template-columns: 100%;
     }
     
     div#mainPhoto {
