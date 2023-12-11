@@ -1,0 +1,144 @@
+@charset "utf-8";
+
+html {
+    background-color: rgb(12, 12, 12);
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0px;
+}
+
+    h2, footer > strong {
+        color: #06850a;
+    }
+
+    section, article, div {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    body > header > h1 > a {   
+        color: white;   
+    }
+        
+        body > header > h1 > a:active {
+            color: white;
+        }
+
+
+header {
+    grid-area: 1/1/1/4;
+
+    font-family: 'Courier New', Courier, monospace;
+
+    background-color: #046307;
+    color: white;
+    
+    text-align: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    padding-top: 5px;
+    padding-bottom: 8px;
+}
+
+    header > h1 {
+        margin: auto;
+    }
+
+   div#nav {
+        grid-area: 2/1/2/4;
+
+        background-color: green;
+        color: white;
+        
+        text-align: center;
+
+        display: grid;
+        grid-template-columns: repeat(3, 0.5fr);
+        
+        position: fixed;
+        top: 50px;
+        left: 0;
+        width: 100%;
+
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+        div#nav > a {   
+            color: white; 
+            margin: auto;  
+        }
+        
+            div#nav > a:active {
+                color: white;
+            }
+
+                div#nav > a:hover {
+                    color: brown;
+                }
+
+    
+
+
+footer.contact {
+    background-color: rgb(31, 31, 31);
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+    footer > div > table {
+        margin: auto;
+
+    }
+
+        th#footerLinks {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+@media only screen and (max-aspect-ratio: 9/16){
+    body {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (min-aspect-ratio: 16/9) {
+    /*Places the body text in the middle of the webpage, with padding that creates 
+        space on the webpage's side. */
+    body {
+        width: 80%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+ }
+
+/* Print */
+
+@page {
+    size: 8.5in 11in;
+    margin: 0.5in;
+ }
+
+ @media print {
+
+    header {
+       position: absolute;
+    }
+
+        div#nav {
+            position: absolute;
+        }
+}

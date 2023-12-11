@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+@import url("reset.css");
+
+body {
+    grid-template-rows: 100px 1fr 20em 75px;
+}
+
+section, article, div {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+div#mainPhoto {
+    grid-area: 2/1/3/1;
+
+    background-color: rgb(24, 24, 24);
+    display: flex;
+}
+
+    div#mainPhoto > img {
+        width: 400px;
+        margin: auto;
+    }
+
+div#main {
+    grid-area: 2/2/3/4;
+
+    font-size: 28px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    background-color: black;
+    color: #046307;
+    
+}
+
+    div#main > p {
+        padding: 8px;
+    }
+
+article {
+    grid-area: 3/1/3/4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+    text-align: center;
+    color: white;
+}
+
+
+    /*Links to other pages*/
+    section#theater {
+        grid-area: 1/1/1/1;
+
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/chumley3.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+    section#german {
+        grid-area: 1/2/1/2;
+
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/kaffelatsch2.png);
+        background-size: 1000px;
+        background-position: 45% 15%;
+        background-repeat: no-repeat;
+    }
+
+
+    section#aboutMe {
+        grid-area: 1/3/1/3;
+
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/me1.jpg);
+        background-size: 600px;
+        background-repeat: no-repeat;
+        background-position: 60% 28%;
+    }
+
+
+footer.contact {
+        grid-area: 4/1/4/4;
+
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+article > section > div > h2 > a {   
+    color: white;   
+}
+
+article > section > div > h2 > a:active {
+    color: white;
+}
+
+/*Mobile Screen*/
+@media only screen and (max-aspect-ratio: 7/6) {
+
+    /* Sets the main photo on top of the content that would be aside of the photo normally */  
+    body {
+        grid-template-rows: 100px 0.5fr 0.15fr 1fr 75px;
+    }
+    
+    div#mainPhoto {
+        grid-area: 2/1/2/4;
+
+
+    }
+    div#main {
+        grid-area: 3/1/3/4;
+
+    }
+
+        div#mainPhoto > img {
+            margin: auto;
+        
+        }
+
+        article {
+            grid-area: 4/1/4/4;
+
+            /*Has each section be organized in one column, instead of multiple columns*/
+            display: grid;
+            grid-template-rows: 20em 20em 20em;
+            grid-template-columns: auto;
+        }
+
+            section#theater {
+                grid-area: 1/1/1/4;
+
+                background-size: 1000px;
+                background-position: 70% 15%;
+            }
+
+            section#german {
+                grid-area: 2/1/2/4;
+
+                background-size: 970px;
+                background-position: 58% 15%;
+            }
+
+            section#aboutMe {
+                grid-area: 3/1/3/4;
+
+                background-size: 1000px;
+            }
+
+            section#survey {
+                grid-area: 4/1/4/4;
+
+                background-size: 900px;
+            }
+
+    footer.contact {
+        grid-area: 5/1/5/4;
+    }
+
+}
