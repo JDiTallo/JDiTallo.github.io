@@ -43,7 +43,7 @@ footer.contact {
     text-align: center;
 }
 
-@media only screen and (max-aspect-ratio: 9/8) {
+@media only screen and (max-aspect-ratio: 8/9) {
 
         body {
             grid-template-rows: 100px 1fr 75px;
@@ -57,7 +57,7 @@ footer.contact {
             column-count: 1;
 
             display: grid;
-            grid-template-rows: 0.5 0.5fr;
+            grid-template-rows: 0.5fr 0.5fr;
             grid-template-columns: 1fr;
         }
 
@@ -71,6 +71,6 @@ footer.contact {
         }
     
         img {
-            width: 25em;
+            width: 80%;
         }
 }
