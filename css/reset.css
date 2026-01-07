@@ -60,6 +60,8 @@ header {
 
     padding-top: 5px;
     padding-bottom: 8px;
+
+    z-index: 3000;
 }
 
     header > h1 {
@@ -78,7 +80,7 @@ header {
         grid-template-columns: repeat(3, 0.5fr);
         
         position: fixed;
-        top: 50px;
+        top: 49px;
         left: 0;
         width: 100%;
 
@@ -164,6 +166,8 @@ footer.contact {
     display: flex;
     gap: 1.5rem;
     align-items: center;
+
+    z-index: 2500;
 }
 
 .dropdown {
