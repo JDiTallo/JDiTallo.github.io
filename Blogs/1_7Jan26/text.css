@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import url("../../css/reset.css");
+
+main#main{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.cover {
+  float: right;
+  width: 180px;
+  height: auto;
+  margin: 0 0 8px 16px;
+  max-width: 100%;
+}
+
+.caption{
+  display: block;
+  clear: right;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+
+.blogEntry {
+  overflow: auto;
+}
+
+
+@media (max-width: 600px) {
+  .cover {
+    float: none;
+    display: block;
+    margin: 0 auto 16px;
+    width: 70%;
+    max-width: 300px; 
+  }
+}
+
+.float{
+    clear: right;
+}

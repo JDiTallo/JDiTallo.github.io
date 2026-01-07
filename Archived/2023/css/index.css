@@ -42,7 +42,7 @@ div#main {
 article {
     grid-area: 3/1/3/4;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     
     text-align: center;
     color: white;
@@ -50,23 +50,32 @@ article {
 
 
     /*Links to other pages*/
-    section#blogs {
+    section#theater {
         grid-area: 1/1/1/1;
 
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Blogs/1_7Jan26/book.jpg);
-        background-size: 600px;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/chumley3.jpg);
+        background-position: center;
         background-repeat: no-repeat;
-        background-position: 0% 0%;
 
     }
 
-    section#aboutMe {
+    section#german {
         grid-area: 1/2/1/2;
 
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/AboutMe/me1.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/kaffelatsch2.jpg);
+        background-size: 1000px;
+        background-position: 45% 15%;
+        background-repeat: no-repeat;
+    }
+
+
+    section#aboutMe {
+        grid-area: 1/3/1/3;
+
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/me1.jpg);
         background-size: 600px;
         background-repeat: no-repeat;
-        background-position: 0% 18%;
+        background-position: 60% 28%;
     }
 
 
@@ -115,22 +124,28 @@ article > section > div > h2 > a:active {
 
             /*Has each section be organized in one column, instead of multiple columns*/
             display: grid;
-            grid-template-rows: 20em 20em;
-            grid-template-columns: 1fr;
+            grid-template-rows: 20em 20em 20em;
+            grid-template-columns: auto;
         }
 
-            section#blogs {
+            section#theater {
                 grid-area: 1/1/1/4;
 
                 background-size: 1000px;
-                background-position: 40% 15%;
+                background-position: 70% 15%;
+            }
+
+            section#german {
+                grid-area: 2/1/2/4;
+
+                background-size: 970px;
+                background-position: 58% 15%;
             }
 
             section#aboutMe {
-                grid-area: 2/1/2/4;
+                grid-area: 3/1/3/4;
 
                 background-size: 1000px;
-                background-position: 40% 15%;
             }
 
     footer.contact {

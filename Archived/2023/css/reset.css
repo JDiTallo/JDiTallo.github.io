@@ -1,11 +1,5 @@
 @charset "utf-8";
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 html {
     background-color: rgb(12, 12, 12);
 
@@ -14,6 +8,7 @@ html {
 
 body {
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin: 0px;
 }
 
@@ -33,14 +28,6 @@ body {
         body > header > h1 > a:active {
             color: white;
         }
-
-main#main{
-    grid-column: 1 / -1;
-    margin: 100px auto 0;
-
-    width: 100%;
-    color: white
-}
 
 
 header {
@@ -75,7 +62,7 @@ header {
         text-align: center;
 
         display: grid;
-        grid-template-columns: repeat(3, 0.5fr);
+        grid-template-columns: repeat(4, 0.5fr);
         
         position: fixed;
         top: 50px;
@@ -101,17 +88,14 @@ header {
 
     
 
+
 footer.contact {
-    grid-area: 5/1/5/4;
     background-color: rgb(31, 31, 31);
     color: white;
 
     display: flex;
     flex-direction: column;
     text-align: center;
-
-    grid-column: 1 / -1;
-    padding: 10px 10px;   /* top bottom left right */
 }
 
     footer > div > table {
@@ -136,8 +120,8 @@ footer.contact {
         space on the webpage's side. */
     body {
         width: 80%;
-        margin: 0 auto;
-        padding: 0; 
+        padding-left: 10%;
+        padding-right: 10%;
     }
  }
 
@@ -157,63 +141,4 @@ footer.contact {
         div#nav {
             position: absolute;
         }
-}
-
-/*Dropdown*/
-#nav {
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-flex;
-    justify-content: center;
-}
-
-.dropdownButton {
-    background: none;
-    border: none;
-    padding: 0;
-
-    font: inherit;
-    cursor: pointer;
-
-    color: white;
-    text-decoration: underline;
-}
-
-.dropdownContent {
-    display: none;
-    position: absolute;
-    top: 100%;
-
-    left: 50%;
-    transform: translateX(-50%);
-
-    background-color: black;
-    border: 1px solid #046307;
-    min-width: 180px;
-    white-space: nowrap;
-
-    z-index: 1000;
-}
-
-.dropdownContent a {
-    display: block;
-    padding: 0.6rem 1rem;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-}
-
-.dropdownContent a:hover,
-.dropdownContent a:focus {
-    background-color: #046307;
-}
-
-.dropdown:hover .dropdownContent,
-.dropdown:focus-within .dropdownContent {
-    display: block;
 }
