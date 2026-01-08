@@ -53,7 +53,7 @@ article {
     section#blogs {
         grid-area: 1/1/1/1;
 
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Blogs/1_7Jan26/book.jpg);
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Blogs/1_7Jan2026/book.jpg);
         background-size: 600px;
         background-repeat: no-repeat;
         background-position: 0% 0%;
@@ -123,14 +123,14 @@ article > section > div > h2 > a:active {
                 grid-area: 1/1/1/4;
 
                 background-size: 1000px;
-                background-position: 40% 15%;
+                background-position: 8% 0%;
             }
 
             section#aboutMe {
                 grid-area: 2/1/2/4;
 
                 background-size: 1000px;
-                background-position: 40% 15%;
+                background-position: 70% 50%;
             }
 
     footer.contact {

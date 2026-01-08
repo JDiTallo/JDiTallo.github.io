@@ -80,7 +80,7 @@ header {
         grid-template-columns: repeat(3, 0.5fr);
         
         position: fixed;
-        top: 49px;
+        top: 45px;
         left: 0;
         width: 100%;
 
